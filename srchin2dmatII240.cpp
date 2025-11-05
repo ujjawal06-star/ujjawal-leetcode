@@ -6,7 +6,7 @@ class Solution{
         bool matsearch(vector<vector<int>> &mat, int tar){
             int m = mat.size(), n = mat[0].size();
             int r=0, c=n-1;
-            while(r>=0 && c<m){
+            while(c>=0 && r<n){
                 if(tar==mat[r][c]){
                     return true;
                 }
